@@ -1,0 +1,225 @@
+:root {
+  --brand: #0ea5e9; /* 自定义主色 */
+  --brand-ink: #0f172a; /* 深色文字 */
+}
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--brand-ink);
+  --r-heading-text-transform: none;
+}
+.reveal a {
+  color: var(--brand);
+}
+.reveal .slide-number {
+  background: rgba(0, 0, 0, 0.4);
+}
+/* 主页徽标/头像区 */
+.hero {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 4px solid var(--brand);
+}
+.badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+.badge {
+  border: 1px solid #cbd5e1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.6em;
+}
+.grid-2 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-3 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.pill {
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+}
+.muted {
+  color: #475569;
+}
+.small {
+  font-size: small;
+}
+.medium {
+  font-size: medium;
+}
+.large {
+  font-size: large;
+}
+.x-large {
+  font-size: x-large;
+}
+.strong {
+  font-weight: 600;
+}
+/* 打印到 PDF：更紧凑一些 */
+@media print {
+  .reveal section {
+    font-size: 80%;
+  }
+}
+
+.flow {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr 1.3fr;
+  gap: 2.2rem;
+  align-items: start;
+}
+.flow-left {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  align-content: start;
+  gap: 0.3rem;
+}
+.box {
+  background: var(--box-bg);
+  border-radius: 18px;
+  padding: 20px 22px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  color: #111;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 3px 10px rgba(0, 0, 0, 0.08);
+}
+.arrow {
+  text-align: center;
+  font-size: 36px;
+  color: #9aa0a6;
+  line-height: 1;
+}
+.reveal .receipt {
+  width: auto;
+  max-width: 75% !important;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+pre code {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* Utility: show code fully without scrollbars and wrap long lines */
+.reveal pre.code-full {
+  overflow: visible;
+  max-height: none;
+  width: 350px;
+}
+.reveal pre.code-full code {
+  white-space: pre-wrap; /* allow wrapping */
+  word-break: break-word; /* break long tokens if needed */
+  max-height: none;
+}
+.title-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+.title-row .tag {
+  background: #f4f6f8;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.dim {
+  color: #6b7280;
+  font-weight: 400;
+  font-size: 0.8em;
+  vertical-align: middle;
+}
+
+/* Tool screenshots layout */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.tool-grid-horizontal {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tool-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 0.75rem;
+  text-align: center;
+}
+.tool-img {
+  height: 200px;
+  width: auto;
+  border-radius: 8px;
+  margin: 0 auto !important;
+  padding: 0;
+  max-width: 100%;
+}
+.tool-caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.5em;
+}
+
+@media (max-width: 900px) {
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tight li {
+  font-size: x-large;
+}
+
+.education {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 1.25rem;
+  font-size: 0.75em;
+  line-height: 1.6;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.pill {
+  display: inline-block;
+  background: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.8em;
+}
+.spacer {
+  height: 10px;
+}

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PhD Application - Intro Deck</title>
+    <!-- Reveal.js core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css"
+    />
+    <!-- Theme: choose one (black, white, league, beige, sky, night, serif, simple, solarized) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/white.css"
+      id="theme"
+    />
+    <!-- Syntax highlight (optional) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/monokai.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- 封面 -->
+        <section
+          data-background="linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%)"
+        >
+          <div>
+            <div style="margin: auto; text-align: center; align-items: center">
+              <h2>仇镜溪 Jingxi Qiu</h2>
+              <!-- <p class="muted">PhD Applicant · NLP</p> -->
+              <div class="badges">
+                <span class="badge">Machine Learning</span>
+                <span class="badge">Natural Language Processing</span>
+                <span class="badge">Computer Vision</span>
+              </div>
+              <p style="margin-top: 0.75rem">
+                <a href="mailto:jq167@georgetown.edu">jq167@georgetown.edu</a> ·
+                <a href="https://website.jingxiqiu.com">Personal Website</a> ·
+                <a href="https://github.com/mouwumou">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <section>
+            <h2>Education</h2>
+            <div class="education">
+              <p>M.S. in Data Science, Georgetown University (2023-2025)</p>
+              <p>
+                B.S. in Finance / Minor in Math, Wenzhou-Kean University
+                (2019-2023)
+              </p>
+            </div>
+          </section>
+
+          <!-- Teaching/Service/Awards -->
+          <!-- <section>
+            <h5>Teaching · Academic Service</h5>
+            <ul style="font-size: 0.9em">
+              <li>TA: DSAN 6700 Machine Learning App Deployment (Fall 2024)</li>
+              <li>
+                RA: Georgetown University McDonough School of Business
+                (2024-2025)
+              </li>
+            </ul>
+          </section> -->
+
+          <!-- 技术能力 -->
+          <section>
+            <h2>Skills</h2>
+            <table
+              style="
+                width: 100%;
+                text-align: left;
+                font-size: 18px;
+                border-collapse: collapse;
+              "
+            >
+              <tr>
+                <th style="text-align: left">Field</th>
+                <th style="text-align: left">Skills</th>
+              </tr>
+              <tr>
+                <td><strong>Programming</strong></td>
+                <td>Python, JavaScript, R, SQL</td>
+              </tr>
+              <tr>
+                <td><strong>NLP & Deep Learning</strong></td>
+                <td>
+                  Transformers (BERT, LLaMA, RoBERTa, T5), LangChain, RAG,
+                  Hugging Face, spaCy
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Computer Vision</strong></td>
+                <td>
+                  Object Detection, Image Segmentation, Generative Adversarial
+                  Networks (GANs), ViT
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Machine Learning</strong></td>
+                <td>
+                  PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, SVM,
+                  Feature Engineering, Clustering
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Model Deployment & MLOps</strong></td>
+                <td>
+                  Flask, Streamlit, MLflow, Docker, AWS (SageMaker, EMR), GitHub
+                  Actions, CI/CD
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Data Engineering</strong></td>
+                <td>Pandas, NumPy, Polars, Spark (PySpark), Hadoop</td>
+              </tr>
+              <tr>
+                <td><strong>Databases & Search</strong></td>
+                <td>MySQL, PostgreSQL, MongoDB, Elasticsearch, Redis</td>
+              </tr>
+              <tr>
+                <td><strong>Others</strong></td>
+                <td>
+                  Rest APIs, Full-Stack Development, Big Data, Data
+                  Visualization, Tableau
+                </td>
+              </tr>
+            </table>
+          </section>
+        </section>
+
+        <!-- 代表性论文/投稿 -->
+        <section>
+          <section>
+            <h2>Publications</h2>
+            <div style="text-align: left">
+              <strong
+                >ProtSi: Prototypical Siamese Network with Data Augmentation for
+                Few-Shot Subjective Answer Evaluation </strong
+              >(Arxiv, 2022)<br />
+              <div class="x-large strong">
+                Yining Lu, Jingxi Qiu, Gaurav Gupta
+              </div>
+              <div class="muted x-large">
+                This paper proposes the ProtSi network, which applies few-shot
+                metric learning to automatic scoring of subjective questions:
+                using Siamese+BERT to construct similarity representations
+                aligned with standard answers, employing a prototype network for
+                classification, and introducing unsupervised regularization with
+                paraphrase consistency and contrastive learning to mitigate
+                overfitting in small samples and challenges with discriminative
+                text. It achieves higher QWK and accuracy on Kaggle short answer
+                datasets.
+              </div>
+              <a
+                class="x-large"
+                href="https://arxiv.org/pdf/2211.09855"
+                data-preview-link
+                >PDF</a
+              >
+            </div>
+          </section>
+          <section>
+            <img
+              src="assets/paper1.png"
+              alt="ProtSi Poster"
+              style="width: 80%; max-width: none; margin-top: 1rem"
+            />
+          </section>
+          <section>
+            <img
+              src="assets/paper2.png"
+              alt="ProtSi Poster"
+              style="width: 80%; max-width: none; margin-top: 1rem"
+            />
+          </section>
+        </section>
+
+        <!-- 项目(带图) -->
+        <section>
+          <h3>Projects</h3>
+          <div>
+            <ul style="list-style-type: none; padding: 0; margin: 20px">
+              <li>1. Agent Model</li>
+              <li>2. Scraping-Cleaning-Analysis Pipeline</li>
+            </ul>
+            <div style="font-size: x-large">
+              Since the projects do not involve particularly advanced technical
+              details, <br />I will present two projects to briefly explain my
+              technical skills.
+            </div>
+          </div>
+        </section>
+
+        <!-- 项目1 Agent 项目 -->
+        <section>
+          <section>
+            <h3>Project 1 - Finance Agent Project</h3>
+            <img src="assets/agent-poster.png" alt="" />
+          </section>
+
+          <!-- Project Structure slide (logos grid) -->
+          <section>
+            <h2>Project Architecture</h2>
+            <div class="card">
+              <img src="assets/agent_structure.png" alt="System diagram" />
+            </div>
+            <ul class="tight">
+              <li>
+                <strong>Frontend (Vue+ElementUI)</strong>: Chat + Spending
+                Overview.
+              </li>
+              <li>
+                <strong>Backend (Django+DRF)</strong>: Agent for interaction,
+                history display, and analysis.
+              </li>
+              <li>
+                <strong>Database</strong>: MySQL; plan to explore MongoDB.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="title-row">
+              <h3 class="title">
+                Agent Tools <span class="dim"> - process receipt</span>
+              </h3>
+            </div>
+            <div class="flow">
+              <div class="flow-left">
+                <div class="box">User input</div>
+                <div class="arrow">↓</div>
+                <div class="box">OCR</div>
+                <div class="arrow">↓</div>
+                <div class="box">Reasoning</div>
+                <div class="arrow">↓</div>
+                <div class="box">Process Receipt</div>
+              </div>
+              <div>
+                <img
+                  class="receipt"
+                  alt="Costco receipt"
+                  src="assets/receipt.png"
+                />
+              </div>
+              <div>
+                <pre
+                  class="code-full"
+                ><code class="language-json" style="font-size: 12px;">
+{
+  "merchant": "Costco Wholesale",
+  "time": "12/05/2024 17:50",
+  "good_list": [
+    { "name": "***KSWTR40PK", "price": 3.99 },
+    { "name": "***KSWTR40PK", "price": 3.99 },
+    { "name": "UNREAL BARS", "price": 10.89 },
+    { "name": "ORG BANANAS", "price": 2.49 },
+    { "name": "3 WHOLE MILK", "price": 2.75 }
+  ]
+}
+          </code></pre>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Agent Tools</h3>
+            <div class="tool-grid">
+              <div class="tool-card">
+                <img
+                  class="tool-img"
+                  src="assets/agent-tool1.png"
+                  alt="category_merchant_tool screenshot"
+                  loading="lazy"
+                />
+                <div class="tool-caption">category_merchant_tool</div>
+              </div>
+              <div class="tool-card">
+                <img
+                  class="tool-img"
+                  src="assets/agent-tool2.png"
+                  alt="create_or_update_expense_tool screenshot"
+                  loading="lazy"
+                />
+                <div class="tool-caption">create_or_update_expense_tool</div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Agent Result</h3>
+            <div class="tool-grid-horizontal">
+              <div>
+                <img
+                  src="assets/agent-result1.png"
+                  alt="result1 screenshot"
+                  loading="lazy"
+                  style="width: 600px; max-width: none"
+                />
+                <div style="font-size: large">Backend Chain</div>
+              </div>
+              <div>
+                <img
+                  src="assets/agent-result2.png"
+                  alt="result2 screenshot"
+                  loading="lazy"
+                  height="250px"
+                />
+                <div style="font-size: large">Frontend Chat</div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- 项目2 数据管道项目 -->
+        <section>
+          <section>
+            <h3>Project 2 - Data Pipeline Project</h3>
+            <img src="assets/data-pipeline-poster.png" alt="" />
+          </section>
+          <section>
+            <h3>Data Pipeline Project - Methods</h3>
+            <img src="assets/data-pipeline-method.png" alt="" />
+          </section>
+          <section>
+            <h3>Data Pipeline Project - Data</h3>
+            <img src="assets/data-pipeline-data.png" alt="" />
+          </section>
+          <section>
+            <h3>Data Pipeline Project - Crawler</h3>
+            <img src="assets/data-pipeline-crawler.png" alt="" />
+          </section>
+          <section>
+            <h3>Data Pipeline Project - LLaMA3.2-3B</h3>
+            <div class="r-stack">
+              <img src="assets/data-pipeline-llama.png" alt="" />
+              <img
+                class="fragment"
+                src="assets/data-pipeline-llama2.png"
+                alt=""
+              />
+            </div>
+          </section>
+          <section>
+            <h3>Data Pipeline Project - Results</h3>
+            <div class="r-stack">
+              <img
+                style="margin: 0px"
+                src="assets/data-pipeline-result1.png"
+                alt=""
+              />
+              <img
+                class="fragment"
+                src="assets/data-pipeline-result2.png"
+                alt=""
+                style="margin: 0 auto; max-height: 600px"
+              />
+              <img
+                class="fragment"
+                src="assets/data-pipeline-result3.png"
+                alt=""
+                style="margin: 0 auto; max-height: 600px"
+              />
+            </div>
+          </section>
+        </section>
+
+        <!-- Future Plans -->
+        <section>
+          <h2>PhD Research Plan</h2>
+          <ul>
+            <li>
+              <strong>Short-term (1 year):</strong> Adapting CV models / SLMs to
+              specialized domains for improved performance and applicability.
+            </li>
+            <br />
+            <li>
+              <strong>Mid-term (2–3 years):</strong> Optimizing and deploying
+              models on edge devices, with enhanced inference strategies under
+              low-confidence conditions.
+            </li>
+          </ul>
+        </section>
+
+        <!-- 结尾/联系 -->
+        <section data-background="#0ea5e9" data-background-transition="fade">
+          <h2 style="color: white">Thank You</h2>
+          <p style="color: #e2e8f0">
+            Contact:
+            <a style="color: white" href="mailto:jq167@georgetown.edu"
+              >jq167@georgetown.edu</a
+            >
+          </p>
+          <p style="color: #e2e8f0">
+            My Website:
+            <a style="color: white" href="https://website.jingxiqiu.com"
+              >https://website.jingxiqiu.com</a
+            >
+          </p>
+          <!-- <aside class="notes">最后可加提问引导、潜在合作点。</aside> -->
+        </section>
+
+        <!-- 项目3 CV GAN 项目 -->
+        <section>
+          <section>
+            <h3>Project 3 - CV GAN Project</h3>
+            <a
+              href="https://website.jingxiqiu.com/files/6500_Final_Project_Report.pdf"
+              alt=""
+              data-preview-link
+            >
+              Link to Full Report (PDF)
+            </a>
+          </section>
+        </section>
+
+        <!-- 可选：附录 / 代码示例 -->
+        <!-- 研究兴趣 -->
+        <section>
+          <h3>Research Interests</h3>
+          <ul style="font-size: medium">
+            <li>
+              <strong
+                >主题 A|小型 LLM 的联合蒸馏 x
+                量化(DQ-Joint)服务于数据科学基础设施</strong
+              >：
+              在端侧/边缘预算下，将教师–学生蒸馏与量化误差联合优化，产出更优的质量–延迟–内存前沿；面向
+              <em
+                >scientific workflows / software discovery / knowledge graph</em
+              >
+              等数据基础设施任务，提供可部署的小模型能力。<br />
+              <em
+                >Topic A | Joint Distillation–Quantization for Small LLMs in
+                Data Science Infrastructure:</em
+              >
+              Under device/edge constraints, jointly optimize KD and
+              quantization to achieve a better quality–latency–memory frontier,
+              targeting
+              <em
+                >scientific workflows, software discovery, and knowledge
+                graphs</em
+              >.
+            </li>
+            <li>
+              <strong
+                >主题
+                B|预算感知的端云协同与兜底策略(面向可复现工作流与溯源)</strong
+              >：
+              基于置信度、延迟与成本学习动态路由：端侧优先，低置信度或超预算时触发云兜底；在保持总体质量的同时显著降低云占比与尾延迟，并记录以支持工作流复现与审计。<br />
+              <em
+                >Topic B | Budget-Aware Edge–Cloud Orchestration (for workflow
+                reproducibility & provenance):</em
+              >
+              Learn confidence/latency/cost-aware routing—edge first with cloud
+              fallback—to cut cloud usage and tail latency at comparable
+              quality, while logging
+              <em>provenance</em> for reproducible workflows.
+            </li>
+            <li>
+              <strong
+                >主题 C|模块化 LLM 工具链(RAG/函数调用/轻量
+                Agent)赋能知识服务</strong
+              >：
+              以小模型完成检索、重写、规划与工具调用，形成可编排的知识服务链；在端到端成功率与首次响应时间上优于单一大模型调用，并可与
+              <em>knowledge graph</em> 与软件服务目录对接。<br />
+              <em
+                >Topic C | Modular LLM Toolchains (RAG / Function Calling /
+                Lightweight Agents) for Knowledge Services:</em
+              >
+              Compose small models for retrieval, rewriting, planning, and tool
+              use; outperform single LLM calls on task success and
+              first-response time, and integrate with
+              <em>knowledge graphs</em> and software catalogs.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Reveal.js core + plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+    <script>
+      const deck = new Reveal({
+        hash: true, // URL hash 导航，便于嵌入与分享
+        slideNumber: "c/t", // 当前/总页
+        transition: "fade", // slide / fade / convex / concave / zoom
+        progress: true,
+        center: true,
+        navigationMode: "default", // linear / grid / default
+        pdfSeparateFragments: false,
+      });
+      deck.initialize({
+        plugins: [RevealNotes, RevealMarkdown, RevealHighlight],
+      });
+    </script>
+
+    <!-- 嵌入到个人网站的方式 1：iframe(推荐、最简单)
+  <iframe src="/path/to/this-file.html" style="width:100%; height:80vh; border:0"></iframe>
+  -->
+
+    <!-- 打印为 PDF：在 URL 后加 ?print-pdf，然后浏览器打印为 PDF。
+       例如：https://your-site/intro.html?print-pdf -->
+  </body>
+</html>
