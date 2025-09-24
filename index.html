@@ -22,6 +22,7 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+
   </head>
   <body>
     <div class="reveal">
@@ -175,6 +176,13 @@
               alt="ProtSi Poster"
               style="width: 80%; max-width: none; margin-top: 1rem"
             />
+            <div class="formula">
+              
+            $$ L_1 = -\sum_{i} \sum_{n} y_{Q_i}^{(n)} \log p_i^{(n)} $$
+            $$ L_2 = -\sum_{s} \sum_{t} p_{st} \log p_{st} $$
+            $$ L_3 = \sum_{i} -\log \frac{\exp(\text{sim}(\delta_i, \delta'_i) / \tau)}{\sum_{j} \exp(\text{sim}(\delta_i, \delta'_j) / \tau)} $$
+            $$ L = t_α \times L_1 + (1 - t_α) \times L_2 + γ \times L_3 $$
+            </div>
           </section>
           <section>
             <img
@@ -502,6 +510,12 @@
       deck.initialize({
         plugins: [RevealNotes, RevealMarkdown, RevealHighlight],
       });
+    </script>
+
+    
+    <script src="plugin/math/math.js"></script>
+    <script>
+      Reveal.initialize({ plugins: [RevealMath.KaTeX] });
     </script>
 
     <!-- 嵌入到个人网站的方式 1：iframe(推荐、最简单)

@@ -223,3 +223,7 @@ pre code {
 .spacer {
   height: 10px;
 }
+
+.formula {
+  font-size: 0.5em;
+}
